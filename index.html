@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <h1>Caesar Cipher</h1>
+
+  <div>
+  <input type="text" id="shift" placeholder="Enter your shift">
+  <label for="choice">Choose your setting:</label>
+  <select id="choice" name="choice" onchange="getOption()">
+    <option value="encrypt">Encrypt</option>
+    <option value="decrypt">Decrypt</option>
+  </select>
+  </div>
+
+  <div>
+  <textarea id="input" name="input" placeholder="Enter your message here"></textarea>
+  <textarea readonly id="output" name="output" placeholder="Your encrypted text will appear here"></textarea>
+  </div>
+
+  <button id="enter" onclick="button()">Encrypt</button>
+  
+</body>
+
+</html>
